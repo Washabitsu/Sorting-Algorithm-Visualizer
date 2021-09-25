@@ -61,3 +61,8 @@ button,select{
 .Controls input[type=text]{
     width: 40px;
 }
+
+.Outer-Control-Div{
+    flex-direction: column;
+    margin-bottom: 100px;
+}
