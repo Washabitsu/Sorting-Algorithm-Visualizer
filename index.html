@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet"> 
+   
+    <title>Sorting Algorithm Visualizer</title>
+</head>
+<body class="d-flex-center">
+    <h1 >Sorting Algorithm Visualizer</h1>
+    <div>   
+        <div class="d-flex-center outer-div">
+            <div class="d-flex-center" style="flex-direction: column;">
+                <div class="d-flex-center ControlsDiv">
+                    <select name="" id="select" >
+                        <option value="BubbleSort">Bubble Sort</option>
+                        <option value="InsertSort">Insert Sort</option>
+                    </select>
+                    <div class="d-flex-center Controls">
+                        <p>Speed : </p>
+                        <div>
+                            <input type="radio" id="quarter-speed" name="speed" value="500" checked>
+                            <label for="quarter-speed">0.25</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="half-speed" name="speed" value="250">
+                            <label for="half-speed">0.5</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="normal" name="speed" value="100">
+                            <label for="normal">1</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="normal" name="speed" value="custom">
+                            <label for="normal">custom :</label>
+                        </div>
+                        <input type="text" id="customSpeed">
+                        <p>Array Length : </p>
+                        <input type="range" min="20" max="500" value="250" class="slider" id="ArrayLength">
+                    </div>
+                    <button id="StartButton">Start</button>
+                </div>     
+            </div>
+            <canvas id="myCanvas" >Your browser does not support the canvas element.</canvas>   
+         </div>
+    </div>
+    
+    <script src="/assets/javascript/javascript.js"></script>
+</body>
+</html>
